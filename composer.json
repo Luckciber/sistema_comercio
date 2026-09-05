@@ -1,0 +1,13 @@
+{
+    "name": "app/sistema-comercio",
+    "description": "Sistema de comercio",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SistemaComercio\\": "./"
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-use Cliente;
+namespace SistemaComercio\Clientes;
 
 interface IClienteRepository
 {

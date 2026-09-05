@@ -1,5 +1,9 @@
 <?php
 
+namespace SistemaComercio\Clientes;
+
+use InvalidArgumentException;
+
 class Cliente
 {
     private ?int $id;

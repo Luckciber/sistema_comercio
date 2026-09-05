@@ -1,7 +1,8 @@
 <?php
 
-use Cliente;
-use IClienteRepository;
+namespace SistemaComercio\Clientes;
+
+use RuntimeException;
 
 class ClienteRepositoryMemoria implements IClienteRepository
 {
@@ -26,7 +27,9 @@ class ClienteRepositoryMemoria implements IClienteRepository
 
         if($id === null || !isset($this->clientes[$id]))
         {
-            throw new RuntimeException("No se puede actualizar un cliente inexistente.");
+            throw new RuntimeException(
+                "No se puede actualizar un cliente inexistente."
+            );
         }
 
         $this->clientes[$id] = $cliente;

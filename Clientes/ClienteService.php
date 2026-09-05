@@ -1,8 +1,8 @@
 <?php
 
-use Cliente;
-use IClienteRepository;
-use IClienteService;
+namespace SistemaComercio\Clientes;
+
+use RuntimeException;
 
 class ClienteService implements IClienteService
 {
@@ -42,6 +42,7 @@ class ClienteService implements IClienteService
         }
 
         $cliente->actualizarDatos($rut, $nombre, $email);
+        $this->repository->actualizar($cliente);
 
         return $cliente;
     }

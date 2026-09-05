@@ -1,8 +1,6 @@
 <?php
 
-use ClienteRepositoryCreator;
-use ClienteRepositoryMemoria;
-use IClienteRepository;
+namespace SistemaComercio\Clientes;
 
 class ClienteRepositoryMemoriaCreator extends ClienteRepositoryCreator
 {
